@@ -2,10 +2,10 @@
 	"name": "exchange-rate-api",
 	"version": "1.0.0",
 	"description": "",
-	"main": "server.js",
+	"main": "index.js",
 	"scripts": {
-		"dev": "nodemon server",
-		"start": "node server.js",
+		"dev": "nodemon index",
+		"start": "node index",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],

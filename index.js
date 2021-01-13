@@ -1,10 +1,11 @@
 const express = require("express");
 const axios = require("axios");
 const app = express();
-const path = require("path");
+// const path = require("path");
 
 app.get("/", (req, res) => {
-	res.sendFile(path.resolve(__dirname, "client", "index.html"));
+	res.send("<h1>HOME PAGE</h1>");
+	// res.sendFile(path.resolve(__dirname, "client", "index.html"));
 });
 
 app.get("/api/rates", async (req, res) => {
@@ -32,7 +33,7 @@ app.get("/api/rates", async (req, res) => {
 			});
 		}
 	} catch (error) {
-		res.statusCode(500).json("An error Occured, Please try again");
+		res.status(500).json("An error Occured, Please try again");
 	}
 });
 
